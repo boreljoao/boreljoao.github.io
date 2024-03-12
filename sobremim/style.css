@@ -40,3 +40,13 @@ main{
     flex: 1;
     padding: 80px 110px;
 }
+#button_cv{
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: grey;
+}
+#button_cv:hover{
+    background-color: white;
+    color: #ffa963;
+}
