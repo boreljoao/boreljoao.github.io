@@ -150,23 +150,33 @@ aside p{
 } 
 
 
-.seta{
-    position: absolute;
-    top: 160px;
-    left: 320px;
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #f3d5d5;
-    border-right: 3px solid #f3d5d5;
-    transform: rotate(45deg);
-}
 .reta{
     height: 2.5px;
     width: 15px;
     background-color: #f3d5d5;
     position: absolute;
-    top: 162.5px;
+    top: 160px;
     left: 311px;
+}
+.reta::after{
+    content: '';
+    width: 8px;
+    height: 3px;
+    transform: rotate(45deg);
+    left: 10px;
+    top: -3px;
+    background-color: #f3d5d5;
+    position: absolute;
+}
+.reta::before{
+    content: '';
+    width: 8px;
+    height: 3px;
+    transform: rotate(-45deg);
+    left: 10.2px;
+    top: 1.6px;
+    background-color: #f3d5d5;
+    position: absolute;
 }
 .content_popup{
     font-size: 20px;

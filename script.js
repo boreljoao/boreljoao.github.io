@@ -30,6 +30,11 @@ ScrollReveal().reveal('.principal', slideRigth);
 ScrollReveal().reveal('.popup', slideUpM,);
 
 
-// animaçoes
+// animaçoes]
+
+
+function manutencao(){
+    alert('A aba loja esta em manutenção')
+}
 
 
