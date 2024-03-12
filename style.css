@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #131010;
+    color: #1f1a1a;
+    
+}
+ 
+/*main*/
+h1{
+    font-size: 190px;
+    letter-spacing: -18px;
+    font-weight: 500;
+    font-family: "Cormorant", serif;
+}
+/* display h1 */
+@media (max-width: 1524px) {
+    h1{
+        font-size: 158px;
+        line-height: 139px;
+    }
+    main{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 1255px) {
+    h1{
+        font-size: 142px;
+        line-height: 127px;
+    }
+    aside p{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 1116px) {
+    h1{
+        font-size: 121px;
+        line-height: 105px;
+    }
+    .bottom{
+        padding-left: 30px;
+    }
+}
+@media (max-width: 938px) {
+    h1{
+        font-size: 108px;
+        line-height: 94px;
+    }
+    main{
+        justify-content: center;
+    }
+    
+}
+main{
+    height: 100vh;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    
+
+}
+.principal a{
+    text-transform: uppercase;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    text-decoration: none;
+    color: #131010;
+    width: max-content;
+    transition: transform 0.5s ease;
+    line-height: 167px;
+}
+.principal a:hover{
+    transform: translatex(10px);
+    transition: all linear 0.5s;
+}
+.principal{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe7d3;
+}
+/*aside*/
+aside{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    height: 100px;
+    flex: 1;
+}
+h3{
+    letter-spacing: 2px;
+}
+.bottom{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    
+}
+.top{
+    margin-left: 30px;
+    font-size: 12px;
+}
+aside p{
+    letter-spacing: -1px;
+}
+
+/* pop-up */
+
+.popup{
+    flex-direction: column;
+    top: 20px;
+    position: absolute;
+    border-radius: 30px;
+    width: 350px;
+    height: 180px;
+    background-color: rgb(82, 61, 48);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    left: 180px;
+    display: flex;
+    user-select: none;
+} 
+
+
+.seta{
+    position: absolute;
+    top: 160px;
+    left: 320px;
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #f3d5d5;
+    border-right: 3px solid #f3d5d5;
+    transform: rotate(45deg);
+}
+.reta{
+    height: 2.5px;
+    width: 15px;
+    background-color: #f3d5d5;
+    position: absolute;
+    top: 162.5px;
+    left: 311px;
+}
+.content_popup{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px;
+    text-transform: uppercase;
+}
