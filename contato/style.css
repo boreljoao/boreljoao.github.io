@@ -32,6 +32,9 @@ h1{
 .home{
     transform: rotate(90deg);
 }
+.home  a{
+    text-decoration: none;
+}
 .home a:hover{
     text-decoration: line-through;
 }
