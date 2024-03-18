@@ -80,9 +80,13 @@ section ul a{
 .btn-outline-light:hover li{
     color: #000000;
 }
+main h1{
+    transition: transform 0.2s linear;
+}
 main h1:hover{
     color: #ffffff;
-    font-style: normal;
+    transform: scale(1.004);
+    transition: transform 0.2s linear;
 }
 .trabalhos p{
     font-size: 15px;
