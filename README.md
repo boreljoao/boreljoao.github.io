@@ -32,8 +32,8 @@ Se você deseja contribuir com melhorias para o meu portfólio, sinta-se à vont
 Se você tiver alguma dúvida, sugestão ou apenas quiser dizer olá, sinta-se à vontade para entrar em contato comigo por meio das seguintes opções:
 
 - Email: boreljoao@gmail.com
-- LinkedIn: [seu-perfil-no-LinkedIn](https://www.linkedin.com/in/boreljoao/)
-- Twitter: [@seu-username](https://twitter.com/borelzadaz)
-
+- LinkedIn: [boreljoao](https://www.linkedin.com/in/boreljoao/)
+- Twitter: [@borelzada](https://twitter.com/borelzadaz)
+- Instagram: [boreljoao06](https://instagram.com/joaoborel06)
 Obrigado por visitar o meu portfólio!
 
