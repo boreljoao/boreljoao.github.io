@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat' ;
+    font-family: 'Helvetica Neue';
     color: #f5e0ce;
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body{
     background-color: #ffe7d3;
 
 }
-.container{
+.containerf{
     width: 100%;
     height: 100vh;
     background-color:  #131010;
@@ -20,9 +20,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 h1{
-    font-size: 220px;
+    font-size: 220px !important;
 }
 .main_top{
     width: 100%;
@@ -31,6 +32,10 @@ h1{
 }
 .home{
     transform: rotate(90deg);
+}
+#backhome{
+    color: #f5e0ce;
+    font-family: 'montserrat';
 }
 .home  a{
     text-decoration: none;
@@ -47,6 +52,9 @@ h1{
 .main_bottom li{
     list-style: none;
     margin-right: 20px;
+}
+.main_bottom ul a{
+    text-decoration-color: #f5e0ce;
 }
 .main_bottom ul{
     display: flex;

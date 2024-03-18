@@ -38,3 +38,6 @@ function manutencao(){
 }
 
 
+function popup() {
+    window.location.href = "/loja/loja.html";
+}
