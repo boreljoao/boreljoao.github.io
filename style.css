@@ -109,6 +109,7 @@ aside p{
     display: flex;
     user-select: none;
     cursor: pointer;
+    z-index: 1;
 } 
 
 
@@ -206,8 +207,11 @@ aside p{
     }
     aside{
         padding-top: 50px;
-        align-self: center;
+        align-self: start;
         height: auto;
+        width: 60%;
+        padding: 0;
+        padding-top: 50px;
     }
     h1{
         font-size: 20vw;
