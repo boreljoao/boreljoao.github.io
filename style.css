@@ -11,58 +11,18 @@
 body{
     background-color: #131010;
     color: #1f1a1a;
-    
+    position: relative;
 }
  
 /*main*/
 h1{
-    font-size: 190px;
+    font-size: 12vw;
     letter-spacing: -18px;
     font-weight: 500;
     font-family: "Cormorant", serif;
 }
 /* display h1 */
-@media (max-width: 1524px) {
-    h1{
-        font-size: 158px;
-        line-height: 139px;
-    }
-    main{
-        padding-left: 20px;
-    }
-}
-@media (max-width: 1255px) {
-    h1{
-        font-size: 142px;
-        line-height: 127px;
-    }
-    aside p{
-        font-size: 15px;
-    }
-    h3{
-        font-size: 15px;
-    }
-    
-}
-@media (max-width: 1116px) {
-    h1{
-        font-size: 121px;
-        line-height: 105px;
-    }
-    .bottom{
-        padding-left: 30px;
-    }
-}
-@media (max-width: 938px) {
-    h1{
-        font-size: 108px;
-        line-height: 94px;
-    }
-    main{
-        justify-content: center;
-    }
-    
-}
+
 main{
     height: 100vh;
     width: 100%;
@@ -82,7 +42,7 @@ main{
     color: #131010;
     width: max-content;
     transition: transform 0.5s ease;
-    line-height: 167px;
+    line-height: 12.5em;
 }
 .principal a:hover{
     transform: translatex(10px);
@@ -100,6 +60,7 @@ main{
     display: flex;
     justify-content: center;
     background-color: #ffe7d3;
+    overflow: hidden;
 }
 /*aside*/
 aside{
@@ -147,6 +108,8 @@ aside p{
     left: 180px;
     display: flex;
     user-select: none;
+    cursor: pointer;
+    z-index: 1;
 } 
 
 
@@ -183,4 +146,90 @@ aside p{
     font-weight: bold;
     padding: 40px;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .popup{
+        display: none;
+        visibility: hidden;   
+        
+     }
+    main{
+        height: max-content;
+        padding-top: 120px;
+    }
+    aside{
+        height: 50vh;
+    }
+}
+@media (max-width: 1535px) {
+    h1{
+        line-height: 0.8em;
+    }
+    main{
+        padding-left: 20px;
+    }
+}
+@media (max-width: 1255px) {
+    h1{
+        font-size: 14vw;
+    }
+    aside p{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 1116px) {
+    .bottom{
+        padding-left: 30px;
+    }
+    h1{
+        font-size: 14.7vw;
+    }
+}
+@media (max-width: 938px) {
+    main{
+        justify-content: center;
+    }
+    h1{
+        font-size: 15vw;
+    }
+}
+@media (max-width: 601px) {
+    .container{
+        flex-direction: column-reverse;
+        justify-content: start;
+        padding-top: 50px;
+    }
+    aside{
+        padding-top: 50px;
+        align-self: start;
+        height: auto;
+        width: 60%;
+        padding: 0;
+        padding-top: 50px;
+    }
+    h1{
+        font-size: 20vw;
+        line-height: 1em;
+    }
+    .principal{
+        height: max-content;
+    }
+    main{
+        height: max-content;
+        padding-top: 2px;
+    }
+    .top{
+        display: none;
+    }
+}
+@media (max-width: 525px) {
+    h1{
+        letter-spacing: -8px;
+    }
 }
