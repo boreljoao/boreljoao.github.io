@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color: #f5e0ce;
     font-family: 'Montserrat' ;
     box-sizing: border-box;
 }
@@ -25,14 +25,17 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     line-height: 180px;
     font-size: 90px;
     letter-spacing: -3px;
 }
 .home{
-    padding: 10px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 130px;
+    left: -15px;
 }
 .home  a{
     text-decoration: none;
@@ -65,6 +68,25 @@ section li{
     border-radius: 50%;
     background-color: wheat;
 }
- 
-
-  
+section ul a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section ul a:hover li{
+    color: #fff;
+    background-color: rgb(151, 126, 79);
+}
+main h1:hover{
+    color: #ffffff;
+    font-size: 180.2px;
+}
+.trabalhos p{
+    font-size: 15px;
+    letter-spacing: normal;
+    height: max-content;
+    line-height: normal;
+}
+.trabalhos a{
+    height: max-content;
+}
