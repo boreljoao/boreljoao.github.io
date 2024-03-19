@@ -22,26 +22,34 @@ body{
     justify-content: space-between;
     overflow: hidden;
 }
-h1{
-    font-size: 220px !important;
+.ola{
+    font-size: 20vw ;
 }
+
 .main_top{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .home{
-    transform: rotate(90deg);
+    background-color: red;
+    height: max-content;
 }
 #backhome{
     color: #f5e0ce;
     font-family: 'montserrat';
+    position: absolute;
+    right: -10px;
+    transform: rotate(90deg);
 }
 .home  a{
     text-decoration: none;
 }
 .home a:hover{
     text-decoration: line-through;
+    position: absolute;
+    top: 50;
+    bottom: 50;
 }
 .main_bottom{
     width: 600px;
@@ -68,3 +76,53 @@ h1{
     color: aliceblue;
 }
 
+@media (max-width: 1212px) {
+    .ola{
+        font-size: 25vw;
+    }
+    .home{
+        top: 0;
+        position: absolute; 
+        top: 25px;
+        right: 1px;
+    }
+    .containerf{
+        padding-left: 40px;
+    }
+}
+@media (max-width: 706px) {
+    .containerf{
+        padding-left: 50px;
+        padding-right: 0px;
+        padding-top: 100px;
+    }
+    .ola{
+        font-size: 33vw;
+    }
+    .containerf{
+        justify-content: center;
+    }
+    .main_bottom h3{
+        font-size: 20px;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .main_bottom ul{
+        padding: 0;
+    }
+    .main_bottom ul a li{
+        color: #fff;
+        
+    }
+    #backhome{
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    .containerf{
+        padding-left: 10px;
+    }
+    .main_bottom li{
+        margin-right: 10px;
+    }
+}
