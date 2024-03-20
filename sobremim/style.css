@@ -20,9 +20,14 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
-h1{
+.tittle_sb{
     font-size: 170px;
     user-select: none;
+}
+#backhome{
+    color: #f5e0ce;
+    font-family: 'montserrat';
+    transform: rotate(90deg);
 }
 .home{
     top: 130px;
@@ -59,9 +64,35 @@ main{
     text-decoration: none;
     border-radius: 20px;
     padding: 10px;
-    background-color: grey;
+    width: 100px;
+    color: black;
+    background-color: #f5e0ce;
+    transition: padding 0.2s linear;
 }
 #button_cv:hover{
-    background-color: white;
+    width: 40px;
     color: #ffa963;
+    padding: 10px 40px;
+    transition: padding 0.2s linear;
+}
+.left p{
+    line-height: 32px;
+    margin-bottom: 140px;
+}
+.left p::first-letter{
+    font-size: 40px;
+}
+.quote{
+    padding-bottom: 19%;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 1.3em;
+    display: block;
+}
+.tittle_quote{
+    margin-bottom: 10%;
+}
+cite{
+    font-size: 14px;
+    display: block;
 }
