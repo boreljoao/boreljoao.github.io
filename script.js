@@ -30,7 +30,14 @@ ScrollReveal().reveal('.principal', slideRigth);
 ScrollReveal().reveal('.popup', slideUpM,);
 
 
-// animaçoes]
+setTimeout(function(){
+    document.body.classList.add('body-ativo')
+}, 2200)
+
+
+
+
+// animaçoes
 
 
 function manutencao(){

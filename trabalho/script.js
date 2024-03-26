@@ -13,4 +13,7 @@ var slideUp = {
 
 
 
-ScrollReveal().reveal('.container', slideUp);
+ScrollReveal().reveal('.containerf', slideUp);
+setTimeout(function(){
+    document.body.classList.add('body-ativo')
+}, 2200)

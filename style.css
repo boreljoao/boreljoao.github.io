@@ -13,7 +13,9 @@ body{
     color: #1f1a1a;
     position: relative;
 }
- 
+.body-ativo{
+    background-color: #ffe7d3;
+}
 /*main*/
 h1{
     font-size: 12vw;
@@ -29,9 +31,8 @@ main{
     padding-left: 50px;
     display: flex;
     align-items: center;
-    
-
 }
+
 .principal a{
     text-transform: uppercase;
     -webkit-user-select: none; /* Safari */

@@ -7,4 +7,7 @@ var slideBottom = {
     distance: '150%'
 }
 
-ScrollReveal().reveal('.container', slideBottom);
+ScrollReveal().reveal('.containerf', slideBottom);
+setTimeout(function(){
+    document.body.classList.add('body-ativo')
+}, 2200)

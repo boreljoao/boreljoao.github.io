@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+:root{
+    --bs-body-bg: #ffe7d3 !important;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,10 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffe7d3;
+    background-color: #ffe7d3 !important;
+}
+.body-ativo{
+    background-color: #131010 ;
 }
 .containerf{
     width: 100%;
