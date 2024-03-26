@@ -75,8 +75,11 @@ section ul a{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.31s linear;
 }
-
+.btn-outline-light:hover{
+    transition: background-color 0.31s linear;
+}
 .btn-outline-light:hover li{
     color: #000000;
 }
@@ -155,10 +158,12 @@ main h1:hover{
         font-size: 18vw;
         padding-left: 14vw;
     }
+    .trabalhos p{
+        padding-left: 14vw;
+    }
     .trabalhos{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     main{
         display: flex;
