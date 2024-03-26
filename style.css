@@ -84,7 +84,7 @@ h3{
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    
+    line-height: 2em;
 }
 .top{
     margin-left: 30px;
@@ -144,7 +144,7 @@ aside p{
 .content_popup{
     font-size: 20px;
     font-weight: bold;
-    padding: 40px;
+    padding: 30px;
     text-transform: uppercase;
 }
 
@@ -180,7 +180,9 @@ aside p{
     h3{
         font-size: 15px;
     }
-    
+    .popup{
+        left: 90px;
+    }
 }
 
 @media (max-width: 1116px) {
@@ -197,6 +199,29 @@ aside p{
     }
     h1{
         font-size: 15vw;
+    }
+}
+@media (max-width:880px) {
+    h1{
+        font-size: 15.5vw;
+        line-height: 0.86em;
+    }
+    .container{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+    main{
+        padding-top: 30px;
+    }
+    .top{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        padding-top: 60px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
     }
 }
 @media (max-width: 601px) {
@@ -231,5 +256,35 @@ aside p{
 @media (max-width: 525px) {
     h1{
         letter-spacing: -8px;
+    }
+}
+@media (max-width: 1534px) {
+    .popup{
+        width: 300px;
+    }
+    .reta{
+        height: 2.5px;
+        width: 15px;
+        background-color: #f3d5d5;
+        position: absolute;
+        top: 160px;
+        left: 261px;
+    }
+}
+
+@media (max-width:1045px) {
+    .bottom{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 979px){
+    .bottom {
+        width: 88%;
+    }
+}
+@media (max-width: 575px) {
+    .bottom {
+        width: 75%;
     }
 }

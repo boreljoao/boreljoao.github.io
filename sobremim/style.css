@@ -14,15 +14,13 @@ body{
 
 .containerf{
     width: 100%;
-    height: 200vh;
     background-color:  #131010;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 .tittle_sb{
-    font-size: 170px;
-    user-select: none;
+    font-size: 9vw;
 }
 #backhome{
     color: #f5e0ce;
@@ -50,7 +48,6 @@ body{
 }
 main{
     display: flex;
-    justify-content: row;
 }
 .left{
     flex: 1;
@@ -76,23 +73,85 @@ main{
     transition: padding 0.2s linear;
 }
 .left p{
-    line-height: 32px;
+    line-height: 43px;
     margin-bottom: 140px;
+    font-size: 1.2em;
 }
 .left p::first-letter{
-    font-size: 40px;
+    font-size: 1.6em;
 }
 .quote{
     padding-bottom: 19%;
-    font-size: 46px;
+    font-size: 3em;
     font-weight: 300;
     line-height: 1.3em;
     display: block;
 }
 .tittle_quote{
     margin-bottom: 10%;
+    font-size: 1.3em;
 }
 cite{
-    font-size: 14px;
+    font-size: 0.3em;
     display: block;
+}
+
+@media (max-width:1192px) {
+    main{
+        flex-direction: column;
+    }
+    .tittle_sb{
+        font-size: 13vw;
+    }
+}
+@media (max-width:828px) {
+    .home{
+        top: 15px;
+    }
+    .tittle_sb{
+        font-size: 16vw;
+    }
+}
+@media (max-width:582px) {
+    .left{
+        padding: 30px 60px;
+    }
+    .left p{
+        font-size: 1.13em;
+    }
+    .quote{
+        font-size: 2em;
+    }
+    .right{
+        padding: 30px 60px;
+    }
+}
+@media (max-width:461px) {
+    .left p{
+        font-size: 0.9em;
+    }
+    .left{
+        padding: 10px 30px;
+    }
+    .right{
+        padding: 10px 30px;
+    }
+    #backhome{
+        font-size: 0.8em;
+    }
+    .tittle_sb{
+       width: 50%;
+       font-size: 23vw;
+    }
+    .space_top{
+        justify-content: center;
+        padding-right: 30vw;
+    }
+}@media (max-width:358px) {
+    .quote{
+        font-size: 1.5em;
+    }
+    .tittle_quote{
+        font-size: 1em;
+    }
 }
