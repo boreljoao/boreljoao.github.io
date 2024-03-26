@@ -12,6 +12,7 @@ body{
     background-color: #131010;
     color: #1f1a1a;
     position: relative;
+    transition: background-color 0.7s ease-in-out;
 }
 .body-ativo{
     background-color: #ffe7d3;

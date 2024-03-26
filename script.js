@@ -32,7 +32,7 @@ ScrollReveal().reveal('.popup', slideUpM,);
 
 setTimeout(function(){
     document.body.classList.add('body-ativo')
-}, 2200)
+}, 2000)
 
 
 
