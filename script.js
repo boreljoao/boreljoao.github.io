@@ -28,11 +28,11 @@ var slideRigth ={
 ScrollReveal().reveal('.container', slideUp);
 ScrollReveal().reveal('.principal', slideRigth);
 ScrollReveal().reveal('.popup', slideUpM,);
-
+ScrollReveal().reveal('body', slideUp, )
 
 setTimeout(function(){
     document.body.classList.add('body-ativo')
-}, 2000)
+}, 2300)
 
 
 

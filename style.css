@@ -63,6 +63,7 @@ main{
     justify-content: center;
     background-color: #ffe7d3;
     overflow: hidden;
+    z-index: 1;
 }
 /*aside*/
 aside{
