@@ -13,6 +13,7 @@
 body{
     background-color: #ffe7d3 !important;
     transition: background-color 0.7s ease-in-out;
+    overflow-x: hidden;
 }
 .body-ativo{
     background-color: #131010 ;
@@ -23,7 +24,7 @@ body{
     background-color:  #131010;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 main a{
     text-decoration: none;

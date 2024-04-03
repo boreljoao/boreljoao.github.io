@@ -11,16 +11,16 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffe7d3;
+    background-color: #ffe7d3 !important;
     transition: background-color 0.7s ease-in-out;
-
+    overflow: hidden;
 }
 .body-ativo{
     background-color: #131010;
 }
 .containerf{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color:  #131010;
     padding: 220px 120px;
     display: flex;

@@ -27,7 +27,7 @@ h1{
 /* display h1 */
 
 main{
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding-left: 50px;
     display: flex;
