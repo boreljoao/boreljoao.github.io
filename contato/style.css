@@ -21,7 +21,7 @@ body{
 }
 .containerf{
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color:  #131010;
     padding: 220px 120px;
     display: flex;

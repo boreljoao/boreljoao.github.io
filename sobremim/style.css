@@ -3,6 +3,9 @@
 :root{
     --bs-body-bg: #ffe7d3 !important;
 }
+html{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,12 +18,9 @@ body{
     transition: background-color 0.7s ease-in-out;
     overflow-x: hidden;
 }
-.about-container{
-    overflow-x: hidden;
-}
 .body-ativo{
     background-color: #131010;
-    overflow-x: hidden;
+    
 }
 .containerf{
     width: 100%;
