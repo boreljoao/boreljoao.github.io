@@ -17,6 +17,7 @@ body{
 }
 .body-ativo{
     background-color: #131010;
+    overflow: hidden;
 }
 .containerf{
     width: 100%;
