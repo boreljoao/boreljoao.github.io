@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffe7d3 !important;
+    background-color: #ffe7d3;
     transition: background-color 0.7s ease-in-out;
     overflow-x: hidden;
 }

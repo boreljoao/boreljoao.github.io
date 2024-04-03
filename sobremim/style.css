@@ -11,8 +11,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ffe7d3 !important;
+    background-color: #ffe7d3;
     transition: background-color 0.7s ease-in-out;
+    overflow-x: hidden;
+}
+.about-container{
     overflow-x: hidden;
 }
 .body-ativo{
@@ -24,7 +27,7 @@ body{
     background-color:  #131010;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .tittle_sb{
     font-size: 9vw;
