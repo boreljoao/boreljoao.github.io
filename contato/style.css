@@ -128,9 +128,20 @@ body{
 }
 @media (max-width: 375px) {
     .containerf{
-        padding-left: 10px;
+        padding-left: 5px;
+    }
+    h3{
+        max-width: 260px;
+    }
+    .main_bottom ul{
+        display: flex;
+        flex-direction: column;
     }
     .main_bottom li{
-        margin-right: 10px;
+        margin-right: 6px;
+        width: max-content;
+    }
+    .main_bottom a{
+        width: max-content;
     }
 }
