@@ -30,6 +30,7 @@ ScrollReveal().reveal('.principal', slideRigth);
 ScrollReveal().reveal('.popup', slideUpM,);
 ScrollReveal().reveal('body', slideUp, )
 
+
 setTimeout(function(){
     document.body.classList.add('body-ativo')
 }, 2300)
@@ -39,12 +40,6 @@ setTimeout(function(){
 
 // animaçoes
 
-
-function manutencao(){
-    alert('A aba loja esta em manutenção')
-}
-
-
-function popup() {
-    window.location.href = "/loja/loja.html";
+function direct_loja(){
+   window.location.href = '/loja/loja.html'
 }

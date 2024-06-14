@@ -1,5 +1,4 @@
 
-
 var slideBottom = {
     duration: 1400,
     origin: 'bottom',
@@ -10,4 +9,4 @@ var slideBottom = {
 ScrollReveal().reveal('.containerf', slideBottom);
 setTimeout(function(){
     document.body.classList.add('body-ativo')
-}, 2200)
+}, 800)

@@ -229,4 +229,10 @@ main h1:hover{
     .btn-outline-light{
         width: 240px;
     }
+     .h1{
+       padding-left: 0px;
+    }
+    .trabalhos a{
+        max-width: 100px;
+    }
 }

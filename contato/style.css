@@ -13,15 +13,14 @@
 body{
     background-color: #ffe7d3;
     transition: background-color 0.7s ease-in-out;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .body-ativo{
     background-color: #131010;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .containerf{
     width: 100%;
-    height: 100vh;
     background-color:  #131010;
     padding: 220px 120px;
     display: flex;

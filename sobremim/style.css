@@ -55,12 +55,13 @@ body{
     font-size: 9vw;
 }
 #backhome{
+    
     color: #f5e0ce;
     font-family: 'montserrat';
     transform: rotate(90deg);
 }
 .home{
-    top: 130px;
+    top: 50px;
     left: -15px;
     position: absolute;
     transform: rotate(90deg);
