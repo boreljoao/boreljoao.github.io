@@ -8,7 +8,7 @@ html{
     scrollbar-width: thin;
 }
 ::-webkit-scrollbar {
-    background-color: #131010;
+    background-color: #110e0ede;
     
 }
 
@@ -35,6 +35,83 @@ html{
     font-family: 'Montserrat' ;
     box-sizing: border-box;
 }
+.div-01{
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+}
+.img-me {
+    background-image: url("/images/me.jpg");
+    border-radius: 30px;
+    background-size: cover;       /* Faz a imagem cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 400px;
+    flex: 1;
+    height: 400px;
+  
+}
+@media (max-width: 975px) {
+    .img-me {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 880px) {
+    .div-01{
+        flex-direction: column;
+    }
+    .img-me {
+        flex: none;
+    }
+}
+.div-01 p{
+    flex: 1;
+}
+.link-rede{
+    width: max-content;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.gith{
+    background: url("/images/github.png");
+    background-size: cover;       /* Faz a imagem cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    
+}
+.gith:hover{
+    background: url("/images/github\ \(1\).png");
+    background-size: cover;       /* Faz a imagem cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.lkn{
+    background: url("/images/linkedin.png");
+    background-size: cover;       /* Faz a imagem cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    
+}
+.lkn:hover{
+    background: url("/images/linkedin\ \(1\).png");
+    background-size: cover;       /* Faz a imagem cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
 body{
     background-color: #ffe7d3;
     transition: background-color 0.7s ease-in-out;
@@ -46,19 +123,43 @@ body{
 }
 .containerf{
     width: 100%;
-    background-color:  #131010;
+    background-color:  #252222;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
 .tittle_sb{
-    font-size: 9vw;
+    font-size: 4vw;
 }
 #backhome{
     
     color: #f5e0ce;
     font-family: 'montserrat';
     transform: rotate(90deg);
+}
+.spaceh{
+    height: 50px;
+}
+@keyframes blink {
+    0% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0.6; /* Invisível */
+    }
+    100% {
+        opacity: 1; /* Visível */
+    }
+}
+.open-work {
+    width: max-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(193, 246, 0);
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    animation: blink 1s infinite; /* Aplica a animação */
 }
 .home{
     top: 50px;
@@ -78,6 +179,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#hand-ola{
+    width: 90px; 
+    display: inline-block;
 }
 main{
     display: flex;
@@ -125,7 +230,7 @@ main{
 }
 .quote{
     padding-bottom: 19%;
-    font-size: 3em;
+    font-size: 2.3em;
     font-weight: 300;
     line-height: 1.3em;
     display: block;
