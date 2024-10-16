@@ -27,6 +27,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    user-select: none;
 }
 .ola{
     font-size: 20vw ;
@@ -40,6 +41,9 @@ body{
 .home{
     background-color: red;
     height: max-content;
+}
+.main_bottom h3{
+    user-select:text;
 }
 #backhome{
     color: #f5e0ce;
@@ -62,6 +66,30 @@ body{
     letter-spacing: 2px;
     line-height: 32px;
     flex-wrap: wrap;
+}
+/* Altera a cor do contorno ao passar o mouse sobre qualquer SVG */
+/* Aplica o preenchimento vermelho ao ícone do WhatsApp */
+.main_bottom a:nth-child(2) svg {
+    stroke: none; /* Remove contorno padrão */
+}
+
+/* Aplica o contorno vermelho ao passar o mouse sobre o ícone do WhatsApp */
+.main_bottom a:nth-child(2) svg:hover {
+    fill: red; /* Remove o preenchimento ao passar o mouse */
+}
+
+/* Altera a cor do contorno ao passar o mouse sobre todos os outros SVGs */
+.main_bottom a svg:hover {
+    fill: none; /* Remove preenchimento ao passar o mouse */
+    stroke: red; /* Aplica contorno vermelho ao passar o mouse */
+}
+
+.main_bottom ul {
+    gap: 25px;
+}
+.main_bottom ul a li{
+    font-size: 25px;
+    color: #ffffff;
 }
 .main_bottom li{
     list-style: none;

@@ -121,12 +121,20 @@ body{
     background-color: #131010;
     
 }
+
 .containerf{
     width: 100%;
     background-color:  #252222;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    user-select: none;
+}
+.right{
+    user-select: text;
+}
+.div-01{
+    user-select: text;
 }
 .tittle_sb{
     font-size: 4vw;

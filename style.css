@@ -20,6 +20,20 @@ body{
 #logo-jp{
     width: 500px;
 }
+.top{
+    user-select: none;
+    -webkit-user-select: none; /* Para compatibilidade com navegadores baseados em WebKit, como o Chrome */
+    -moz-user-select: none;    /* Para compatibilidade com o Firefox */
+    -ms-user-select: none; 
+}
+.top a{
+    text-decoration: none;
+    color: black;
+}
+.top a:hover{
+    color: rgb(255, 0, 0);
+    user-select: none;
+}
 /*main*/
 h1{
     font-size: 12vw;
@@ -28,7 +42,9 @@ h1{
     font-family: "Cormorant", serif;
 }
 /* display h1 */
-
+.bottom p{
+font-weight: 800;
+}   
 main{
     height: auto;
     width: 100%;
@@ -47,7 +63,7 @@ main{
     color: #131010;
     width: max-content;
     transition: transform 0.5s ease;
-    line-height: 12.5em;
+    line-height: 15.5em;
 }
 .principal a:hover{
     transform: translatex(10px);
@@ -67,6 +83,7 @@ main{
     background-color: #ffe7d3;
     overflow: hidden;
     z-index: 1;
+    user-select: none;
 }
 /*aside*/
 aside{
