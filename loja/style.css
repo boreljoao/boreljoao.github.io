@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bs-body-bg: #ffe7d3 !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue';
+    color: #f5e0ce;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffe7d3;
+    transition: background-color 0.7s ease-in-out;
+    overflow: hidden;
+}
+.body-ativo{
+    background-color: #131010;
+    overflow-x: hidden;
+}
+.main_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    background-color: red;
+    height: max-content;
+}
+.main_bottom h3{
+    user-select:text;
+}
+#backhome{
+    color: #f5e0ce;
+    font-family: 'montserrat';
+    position: absolute;
+    right: -10px;
+    transform: rotate(90deg);
+}
+.home  a{
+    text-decoration: none;
+}
+.home a:hover{
+    text-decoration: line-through;
+    position: absolute;
+    top: 50;
+    bottom: 50;
+}
+.containerf{
+    width: 100%;
+    background-color:  #131010;
+    padding: 220px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    height: 100vh;
+}
+.containerf h1{
+    padding-bottom: 100px;
+    font-size: 60px;
+}
+.sad{
+    background-image: url('../images/sad.webp');
+    width: 150px;
+    height: 150px;
+    background-size: cover; /* Adicionado para ajustar a imagem */
+}
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .loader-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3d3131;
+    margin: 0 10px;
+    animation: loader-dot 1.5s infinite ease-in-out;
+    animation-delay: calc(0.5s);
+  }
+  
+  .loader-dot:nth-child(2) {
+    animation-delay: calc(0.5s + 0.25s);
+  }
+  
+  .loader-dot:nth-child(3) {
+    animation-delay: calc(0.5s + 0.5s);
+  }
+  
+  @keyframes loader-dot {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

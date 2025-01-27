@@ -13,7 +13,7 @@
 body{
     background-color: #ffe7d3;
     transition: background-color 0.7s ease-in-out;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .body-ativo{
     background-color: #131010;
@@ -75,13 +75,13 @@ body{
 
 /* Aplica o contorno vermelho ao passar o mouse sobre o ícone do WhatsApp */
 .main_bottom a:nth-child(2) svg:hover {
-    fill: red; /* Remove o preenchimento ao passar o mouse */
+    fill: #fcd34d; /* Remove o preenchimento ao passar o mouse */
 }
 
 /* Altera a cor do contorno ao passar o mouse sobre todos os outros SVGs */
 .main_bottom a svg:hover {
     fill: none; /* Remove preenchimento ao passar o mouse */
-    stroke: red; /* Aplica contorno vermelho ao passar o mouse */
+    stroke: #fcd34d; /* Aplica contorno vermelho ao passar o mouse */
 }
 
 .main_bottom ul {

@@ -41,7 +41,7 @@ html{
     gap: 30px;
 }
 .img-me {
-    background-image: url("/images/me.jpg");
+    background-image: url("/images/me.webp");
     border-radius: 30px;
     background-size: cover;       /* Faz a imagem cobrir toda a área */
     background-position: center;  /* Centraliza a imagem */
@@ -75,17 +75,18 @@ html{
     justify-content: space-between;
 }
 .gith{
-    background: url("/images/github.png");
+    background: url("/images/github_a.svg");
     background-size: cover;       /* Faz a imagem cobrir toda a área */
     background-position: center;  /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     width: 80px;
     height: 80px;
     cursor: pointer;
-    
+    transition: 0.5s ease;
 }
 .gith:hover{
-    background: url("/images/github\ \(1\).png");
+    background: url("/images/github_p.svg");
+    fill: blue;
     background-size: cover;       /* Faz a imagem cobrir toda a área */
     background-position: center;  /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -94,17 +95,17 @@ html{
     cursor: pointer;
 }
 .lkn{
-    background: url("/images/linkedin.png");
+    background: url("/images/linkedin_a.svg");
     background-size: cover;       /* Faz a imagem cobrir toda a área */
     background-position: center;  /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
     width: 80px;
     height: 80px;
     cursor: pointer;
-    
+    transition: 0.5s ease;
 }
 .lkn:hover{
-    background: url("/images/linkedin\ \(1\).png");
+    background: url("/images/linkedin_p.svg");
     background-size: cover;       /* Faz a imagem cobrir toda a área */
     background-position: center;  /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -160,14 +161,24 @@ body{
     }
 }
 .open-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: max-content;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(193, 246, 0);
-    color: #000000;
+    color: rgb(57, 246, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     animation: blink 1s infinite; /* Aplica a animação */
+}
+.ball-free{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(57, 246, 0);
+    display: inline-block;
+    margin-right: 5px;
 }
 .home{
     top: 50px;
@@ -204,20 +215,58 @@ main{
     padding: 80px 110px;
 }
 .button_cv{
+    --btn-color: rgb(124 45 18);
+    --btn-bg: #fcd34d;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 14px 22px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: system-ui;
+    border: 2px solid var(--btn-color);
+    transition: 100ms ease;
+    box-shadow: 5px 5px 0 0 var(--btn-color);
     text-decoration: none;
-    border-radius: 20px;
-    padding: 10px;
-    width: 100px;
-    color: black;
-    background-color: #f5e0ce;
-    transition: padding 0.25s linear;
 }
 
 .button_cv:hover{
-    width: 40px;
-    color: #ff9035;
-    padding: 10px 40px;
-    transition: padding 0.25s linear;
+    box-shadow: 2px 2px 0 0 var(--btn-color);
+}
+.button_cv:active {
+    transition: 50ms ease;
+    box-shadow:  0 0 0 0 var(--btn-color);
+  }
+  .button_cv:focus-visible {
+    outline: 0;
+    --btn-color: #002cc8;
+  }
+  
+  .button_cv:focus-visible::after {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 12px);
+    transform: translateX(-50%);
+    content: "\21E7";
+    animation: float .5s ease-in-out infinite;
+  }
+  @keyframes float {
+	0% {
+		transform: translateX(-50%) translatey(0px);
+	}
+	50% {
+		transform: translateX(-50%) translatey(-6px);
+	}
+	100% {
+		transform: translateX(-50%) translatey(0px);
+	}
 }
 .curriculo{
     padding-bottom: 10vh;
@@ -229,7 +278,7 @@ main{
     margin-bottom: 2vh;
 }
 .left p{
-    line-height: 43px;
+    line-height: 1.7;
     margin-bottom: 140px;
     font-size: 1.2em;
 }
