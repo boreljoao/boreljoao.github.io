@@ -41,6 +41,8 @@ body{
 .home{
     background-color: red;
     height: max-content;
+    position: absolute;
+    left: -15px;
 }
 .main_bottom h3{
     user-select:text;
@@ -49,7 +51,6 @@ body{
     color: #f5e0ce;
     font-family: 'montserrat';
     position: absolute;
-    right: -10px;
     transform: rotate(90deg);
 }
 .home  a{
@@ -57,9 +58,7 @@ body{
 }
 .home a:hover{
     text-decoration: line-through;
-    position: absolute;
-    top: 50;
-    bottom: 50;
+    
 }
 .main_bottom{
     width: 600px;
