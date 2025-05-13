@@ -328,6 +328,13 @@ body {
 
 /* Responsivo */
 @media (max-width: 1024px) {
+    .cursor {
+        display: none;
+    }
+    
+    .cursor-follower {
+        display: none;
+    }
     .container {
         flex-direction: column;
     }
